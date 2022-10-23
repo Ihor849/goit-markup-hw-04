@@ -301,7 +301,7 @@ line-height: 1.19;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 4px;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 /* .about-us-text:nth-child(1)::before {
