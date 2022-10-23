@@ -13,6 +13,7 @@
     --main-background: #FFFFFF;
     --secondary-background: #F5F4FA;
     --secthion-hero: #2F303A;
+    --icons-background: #F5F4FA
 }
 
 
@@ -129,8 +130,27 @@ line-height: 1.19;
 .site-nav .item:nth-child(3n) {
     margin-right: 0;
 }
+
+.auth {
+    margin-left: auto;
+}
+
+/* .emil::before {
+    content: "";
+    width: 16px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/envelope.png);
+    margin-right: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px
+    
+    
+} */
+
 .auth .item {
-    display: inline-block;
+    display: inline-flex;
     /* outline: 2px solid black; */
 }
  
@@ -140,9 +160,7 @@ line-height: 1.19;
 /* .auth .item:not(last-child) { */
     
 
-.auth {
-    margin-left: auto;
-}
+
 
 /* headcontact-addres */
 .headcontact-addres {
@@ -168,6 +186,9 @@ line-height: 1.19;
 .headcontact-addres:focus {
     color: var(--accent-color);
 }
+/* .tel {
+    background-image: ;
+} */
 
 /* section hero */
 
@@ -178,10 +199,15 @@ line-height: 1.19;
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--secthion-hero);
+    background-image: linear-gradient(to right,
+    rgba(49, 47, 58, 0.4), rgba(49, 47, 58, 0.4)),
+    url(../images/hero.jpg);
     text-align: center;
-
 }
 
 .hero-title {
@@ -253,14 +279,49 @@ line-height: 1.19;
 /* outline: 2px solid blue; */
 }
 
+
 .about-us-text {
-    flex-basis: calc((100% - 90px) / 4);
+    display: block;
+    flex-basis: calc((100% - 30px*3) / 4);
     margin-right: 30px;
-}
+} 
 
 .about-us-text:nth-child(4n) {
     margin-right: 0;
 } 
+
+
+
+.about-us-text::before {
+    content: "";
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+    background: var(--icons-background);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    outline: 2px solid red;
+}
+
+/* .about-us-text:nth-child(1)::before {
+    background-image: url(../images/antenna\ 1.png);
+} */
+.antenna::before {
+    background-image: url(../images/antenna\ 1.png);
+}
+
+.clock::before {
+    background-image: url(../images/clock\ 1.png);
+}
+
+.diagram::before {
+    background-image: url(../images/diagram\ 1.png);
+}
+
+.astronaut::before {
+    background-image: url(../images/astronaut\ 1.png);
+}
 
 /* Чим ми займаємося */
 
