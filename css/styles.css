@@ -386,11 +386,15 @@ line-height: 1.19;
     /* outline: 2px solid red; */
 }
 
-.icon-list {
+.link-team {
+    display: inline-block;
+}
 
+.icon-list {
     fill: #AFB1B8;
     border-radius: 50%;
 }
+
 
 .icon-list:hover {
 background-color: #2196F3;
